@@ -2,72 +2,156 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Shawn | DevOps Portfolio</title>
+  <title>Shawn Sreeju Sampath | DevOps Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+
 </head>
 <body>
+  <canvas id="particles"></canvas>
 
-<div class="cursor"></div>
 
-<header class="hero">
-  <nav>
-    <h1>&lt;Shawn/&gt;</h1>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="name-banner">
+    <div class="fade-left"></div>
+    <div class="fade-right"></div>
+    <div class="name-track">
+      <span class="gradient-text">
+      <span>DevOps • Cloud • Automation • Vibe Coding •</span>
+      <span>DevOps • Cloud • Automation • Vibe Coding •</span>
+      </span>
+    </div>
+    </div>
+  </div>
+  <div class="typing-intro">
+    <span id="typedText"></span>
+  </div>
+    
+<header>
+  <div class="container nav">
+    <h2 class="logo">SHAWN SREEJU SAMPATH</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="theme-btn">🌙</button>
 
-  <div class="terminal">
-    <p>$ Hi, I'm Shawn</p>
-    <p class="typing"></p>
+    </nav>
   </div>
 </header>
 
-<section id="about" class="section glass reveal">
+<section class="hero container">
+  <div class="hero-content">
+  <div class="hero-text">
+    <h1>DevOps Engineer & Cloud Enthusiast</h1>
+    <p>I design reliable systems, automate workflows, and build scalable infrastructure.</p>
+    <div class="hero-buttons">
+      <a href="resume.pdf" download class="primary-btn">Download Resume</a>
+      <a href="#contact" class="secondary-btn">Contact Me</a>
+    </div>
+  </div>
+  <div class="hero-image">
+    <img src="profile.jpg" alt="Shawn Profile Photo">
+  </div>
+  </div>
+</section>
+<section id="about" class="section container">
   <h2>About Me</h2>
   <p>
-    DevOps aspirant from Kerala. I love automating systems, learning cloud tech,
-    and deploying clean solutions. Football, guitar & gaming keep my energy high.
+    I am a Computer Engineering student passionate about <span class="highlight">DevOps</span>, cloud technologies, 
+    and automation. I enjoy working with <span class="highlight">Linux</span>, <span class="highlight">Docker</span>, <span class="highlight">CI/CD pipelines</span>, and building 
+    scalable systems.
   </p>
 </section>
 
-<section id="skills" class="section reveal">
-  <h2>Skills</h2>
-  <div class="cards">
-    <div class="card">Linux</div>
-    <div class="card">Docker</div>
-    <div class="card">Git & GitHub</div>
-    <div class="card">AWS Basics</div>
-    <div class="card">CI/CD</div>
-    <div class="card">HTML • CSS • JS</div>
+<section id="skills" class="section light">
+  <div class="container">
+    <h2>Technical Skills</h2>
+    <div class="skill">
+      <p>Linux</p>
+      <div class="progress"><div class="progress-bar" data-width="90%"></div></div>
+    </div>
+    
+    <div class="skill">
+      <p>Docker</p>
+      <div class="progress"><div class="progress-bar" data-width="25%"></div></div>
+    </div>
+    
+    <div class="skill">
+      <p>Git & GitHub</p>
+      <div class="progress"><div class="progress-bar" data-width="85%"></div></div>
+    </div>
+    
+    <div class="skill">
+      <p>AWS</p>
+      <div class="progress"><div class="progress-bar" data-width="90%"></div></div>
+    </div>
+    
+    <div class="skill">
+      <p>CI/CD</p>
+      <div class="progress"><div class="progress-bar" data-width="70%"></div></div>
+    </div>
+    
+    <div class="skill">
+      <p>Kubernetes</p>
+      <div class="progress"><div class="progress-bar" data-width="30%"></div></div>
+    </div>
+    
+    </div>
   </div>
 </section>
 
-<section id="projects" class="section glass reveal">
+<section id="projects" class="section container">
   <h2>Projects</h2>
-  <div class="cards">
-    <div class="card">AI Career Guidance Portal</div>
-    <div class="card">Smart Home Automation</div>
-    <div class="card">DevOps Mini Labs</div>
+  <div class="grid">
+    <div class="project-card">
+      <h3>AI-Powered Career Guidance Portal</h3>
+      <p>AI-powered system to guide students in choosing suitable careers.</p>
+      <a href="https://github.com/YOURUSERNAME/devops-lab" target="_blank">View on GitHub →</a>
+    </div>
+    
+    <div class="project-card">
+      <h3>DevOps Mini Lab</h3>
+      <p>CI/CD automation using GitHub Actions and Docker.</p>
+      <a href="https://github.com/YOURUSERNAME/devops-lab" target="_blank">View on GitHub →</a>
+    </div>    
   </div>
 </section>
 
-<section id="contact" class="section reveal">
-  <h2>Contact</h2>
-  <p>Email: shawnsreeju@karunya.edu.in</p>
-  <p>GitHub • LinkedIn</p>
+<section id="contact" class="section light">
+  <div class="container">
+    <h2>Contact</h2>
+    <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=shawnsreeju@karunya.edu.in" target="_blank">
+      shawnsreeju@karunya.edu.in
+    </a>
+    </p>
+    <p><a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/" target="_blank">
+      LinkedIn
+    </a>
+     | <a href="https://github.com/YOURUSERNAME" target="_blank">
+      GitHub
+    </a>
+    </p>
+  </div>
 </section>
 
 <footer>
-  <p>© 2026 Shawn</p>
+  <div class="container">
+    <p>© 2026 Shawn S. All rights reserved.</p>
+  </div>
 </footer>
+
+<div class="social-sidebar">
+  <a href="mailto:shawnsreeju@karunya.edu.in">✉</a>
+  <a href="https://github.com/YOURUSERNAME" target="_blank">GitHub</a>
+  <a href="https://www.linkedin.com/in/YOURUSERNAME/" target="_blank">LinkedIn</a>
+</div>
 
 <script src="script.js"></script>
 </body>
+
 </html>
