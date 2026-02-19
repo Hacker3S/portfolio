@@ -26,7 +26,6 @@
   .hero {
     min-height: 100vh;
     padding: 40px 60px;
-    background: radial-gradient(circle at top, #003b2f, #000);
   }
   
   nav {
@@ -357,8 +356,8 @@ body {
   height: 280px;
   object-fit: cover;
   border-radius: 50%;
-  border: none;
-  box-shadow: none;
+  border: 4px solid var(--accent);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
   transition: transform 0.3s ease;
 }
 
@@ -381,7 +380,7 @@ body {
   }
 }
 .hero-image img {
-  border: none;
+  border: 4px solid var(--accent);
 }
 .name-banner {
   width: 100%;
